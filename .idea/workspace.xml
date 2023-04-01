@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d1eb694-489a-40b7-b8f2-43761cedbf84" name="Changes" comment="Homework module9 - Collections">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/DoublyNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/MyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/MyLinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/MyQueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/MyStackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/OurCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examples/DoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examples/DoublyLinkedListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examples/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examples/LinkedListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Examples/LinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Map/MapNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Map/MyHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Map/MyHashMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Map/MyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +40,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/holge/Desktop/!!!TMP/GoIT/!!!JAVA/module8"
+    "last_opened_file_path": "C:/Users/holge/Desktop/!!!TMP/GoIT/!!!JAVA/module8",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">

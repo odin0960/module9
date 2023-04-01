@@ -1,0 +1,45 @@
+<<Collection>>
+
+<<Collection>>
+
+add(Object value) �������� ����� � �����
+remove(int index) 㤠��� ����� ��� �����ᮬ
+clear() ��頥� ��������
+size() �����頥� ࠧ��� ������樨
+get(int index) �����頥� ����� ��� �����ᮬ
+
+Collection.MyArrayList
+
+Collection.MyLinkedList
+
+
+
+
+<<Queue>>
+
+clear() ��頥� ��������
+size() �����頥� ࠧ��� ������樨
+peek() �����頥� ���� ����� � ��।� (FIFO)
+
+
+Collection.MyQueue FIFO
+
+add(Object value) �������� ����� � �����
+poll() �����頥� ���� ����� � ��।� � 㤠��� ��� �� ������樨
+
+
+Collection.MyStack LIFO
+
+push(Object value) �������� ����� � �����
+remove(int index) 㤠��� ����� ��� �����ᮬ
+pop() �����頥� ���� ����� � �⥪� � 㤠��� ��� �� ������樨
+
+<<Map>>
+put(Object key, Object value) �������� ���� ���� + ���祭��
+remove(Object key) 㤠��� ���� �� �����
+clear() ��頥� ��������
+size() �����頥� ࠧ��� ������樨
+get(Object key) �����頥� ���祭��(Object value) �� �����
+
+Map.MyHashMap
+

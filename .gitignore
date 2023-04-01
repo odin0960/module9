@@ -28,18 +28,7 @@ bin/
 ### Mac OS ###
 .DS_Store
 /src/Examples/
-/1.Collection.png
-/2.List.png
-/3.Set.png
-/4.Queue.png
-/5.Map.png
-/draft01.pdf
-/draft03.pdf
-/java-collection-hierarchy.png
 /module9.iml
-/module9.jam
-/module9.pdf
 /module9.txt
-
 /.idea/
 /pics/

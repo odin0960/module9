@@ -1,8 +1,8 @@
-package Collection;
+package Collections;
 
 import java.util.StringJoiner;
 
-public class MyArrayList<E> implements OurList {
+public class MyArrayList<E> implements OurList<E> {
     private static final int INIT_SIZE = 8;
 
     private Object[] data;
@@ -12,7 +12,7 @@ public class MyArrayList<E> implements OurList {
         data = new Object[INIT_SIZE];
     }
 
-    public void add(Object value) {
+    public void add(E value) {
         if (index >= data.length) {
             resize();
         }
@@ -21,21 +21,23 @@ public class MyArrayList<E> implements OurList {
     }
 
     private void resize() {
-          int newSize = data.length * 2;
-          Object[] newData = new Object[newSize];
-          System.arraycopy(data, 0, newData, 0, data.length);
-          data = newData;
+        int newSize = data.length * 2;
+        Object[] newData = new Object[newSize];
+        System.arraycopy(data, 0, newData, 0, data.length);
+        data = newData;
     }
 
     public int size() {
+
         return index;
     }
 
     public E get(int i) {
+
         return (E) data[i];
     }
 
-    public void clear(){
+    public void clear() {
         data = null;
         index = 0;
     }

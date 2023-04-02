@@ -1,14 +1,14 @@
-package Collection;
+package Collections;
 
 public class MyStackTest {
     public static void main(String[] args) {
-        MyStack stackChar = new MyStack();
-        MyStack stackInt = new MyStack();
+        MyStack <Character> stackChar = new MyStack<>();
+        MyStack <Integer> stackInt = new MyStack<>();
 
-        for (char c = 'A'; c <= 'F'; c++)
+        for (Character c = 'A'; c <= 'F'; c++)
             stackChar.push(c);
 
-        for (int i = 1; i < 10; i++) {
+        for (Integer i = 1; i < 10; i++) {
             stackInt.push(i);
         }
 

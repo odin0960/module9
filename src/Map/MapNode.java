@@ -1,15 +1,14 @@
 package Map;
 
-public class MapNode {
+public class MapNode<K,V> {
 
-    public Object key;
-    public Object value;
+    public K key;
+    public V value;
     public MapNode next;
 
-    MapNode(Object key, Object value, MapNode next) {
+    MapNode(K key, V value, MapNode next) {
         this.key = key;
         this.value = value;
         this.next = next;
     }
-
 }

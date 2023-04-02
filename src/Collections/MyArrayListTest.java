@@ -1,9 +1,9 @@
-package Collection;
+package Collections;
 
 public class MyArrayListTest {
     public static void main(String[] args) {
 //        MyArrayList<Integer> list = new MyArrayList<>();
-        MyArrayList<Character> list = new MyArrayList<>();
+        OurList<Character> list = new MyArrayList<>();
 
         System.out.println("list = " + list);
         System.out.println("list.size() = " + list.size());

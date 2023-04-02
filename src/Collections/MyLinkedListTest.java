@@ -1,29 +1,28 @@
-package Collection;
+package Collections;
 
-import java.util.Collection;
-
-public class MyQueueTest {
+public class MyLinkedListTest {
 
     public static void main(String[] args) {
-        MyQueue listChar = new MyQueue();
-        MyQueue listInt = new MyQueue();
+        OurList <Character> listChar = new MyLinkedList<>();
+        OurList <Integer> listInt = new MyLinkedList<>();
 
-        for (char c = 'A'; c <= 'F'; c++)
+        for (Character c = 'A'; c <= 'F'; c++)
             listChar.add(c);
 
-        for (int i = 1; i < 10; i++) {
+        for (Integer i = 0; i < 10; i++) {
             listInt.add(i);
         }
 
         System.out.println(listChar);
         System.out.println(listInt);
         System.out.println("listInt.size() = " + listInt.size());
-        System.out.println("listInt.peek() = " + listInt.peek());
-        System.out.println("listInt.poll() = " + listInt.poll());
+        System.out.println("listInt.get(4) = " + listInt.get(4));
+        listInt.remove(4);
         System.out.println("listInt.size() = " + listInt.size());
         System.out.println(listInt);
         listInt.clear();
         System.out.println("listInt.size() = " + listInt.size());
         System.out.println(listInt);
     }
+
 }

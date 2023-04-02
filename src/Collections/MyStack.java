@@ -1,15 +1,14 @@
-package Collection;
+package Collections;
 
 import java.util.StringJoiner;
 
-class MyStack implements OurQueue {
+class MyStack<E> implements OurQueue<E> {
     // LIFO
     //Можно делать либо с помощью Node либо с помощью массива.
-    //Stack
 
     Node head = null;
 
-    public void push(Object value) {            //добавляет элемент в конец
+    public void push(E value) {            //добавляет элемент в конец
         head = new Node(value, head);
     }
 
@@ -46,14 +45,14 @@ class MyStack implements OurQueue {
         return size;
     }
 
-    public Object peek() {   //возвращает первый элемент в стеке (LIFO)
-        return head.value;
+    public E peek() {   //возвращает первый элемент в стеке (LIFO)
+        return (E) head.value;
     }
 
-    public Object pop() { //возвращает первый элемент в стеке и удаляет его из коллекции
+    public E pop() { //возвращает первый элемент в стеке и удаляет его из коллекции
         var result = head.value;
         head = head.next;
-        return result;
+        return (E) result;
     }
 
     public String toString() {

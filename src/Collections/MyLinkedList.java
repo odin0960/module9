@@ -1,14 +1,14 @@
-package Collection;
+package Collections;
 
 import java.util.StringJoiner;
 
-public class MyLinkedList implements OurList {
+public class MyLinkedList<E> implements OurList<E> {
 // двусвязный список
 
     DoublyNode head = null;
     DoublyNode tail = null;
 
-    public void add(Object value) {
+    public void add(E value) {
         if (tail == null) {
             var node = new DoublyNode(value, null, null);
             tail = node;
@@ -34,7 +34,7 @@ public class MyLinkedList implements OurList {
         return size;
     }
 
-    public Object get(int index) {
+    public E get(int index) {
         if (tail == null)
             return null;
 
@@ -45,7 +45,7 @@ public class MyLinkedList implements OurList {
             index--;
         }
 
-        return current.value;
+        return (E) current.value;
     }
 
     public void remove(int index) {

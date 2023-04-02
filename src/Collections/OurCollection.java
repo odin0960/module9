@@ -1,4 +1,4 @@
-package Collection;
+package Collections;
 
 interface OurCollection<E> {
     void clear();
@@ -15,5 +15,5 @@ interface OurList<E> extends OurCollection {
 }
 
 interface OurQueue<E> extends OurCollection {
-    Object peek();
+    E peek();
 }

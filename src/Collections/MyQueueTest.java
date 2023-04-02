@@ -1,30 +1,27 @@
-package Collection;
+package Collections;
 
-import Examples.LinkedList;
-
-public class MyLinkedListTest {
+public class MyQueueTest {
 
     public static void main(String[] args) {
-        MyLinkedList listChar = new MyLinkedList();
-        MyLinkedList listInt = new MyLinkedList();
+        MyQueue <Character> listChar = new MyQueue<>();
+        MyQueue <Integer> listInt = new MyQueue<>();
 
-        for (char c = 'A'; c <= 'F'; c++)
+        for (Character c = 'A'; c <= 'F'; c++)
             listChar.add(c);
 
-        for (int i = 0; i < 10; i++) {
+        for (Integer i = 1; i < 10; i++) {
             listInt.add(i);
         }
 
         System.out.println(listChar);
         System.out.println(listInt);
         System.out.println("listInt.size() = " + listInt.size());
-        System.out.println("listInt.get(4) = " + listInt.get(4));
-        listInt.remove(4);
+        System.out.println("listInt.peek() = " + listInt.peek());
+        System.out.println("listInt.poll() = " + listInt.poll());
         System.out.println("listInt.size() = " + listInt.size());
         System.out.println(listInt);
         listInt.clear();
         System.out.println("listInt.size() = " + listInt.size());
         System.out.println(listInt);
     }
-
 }

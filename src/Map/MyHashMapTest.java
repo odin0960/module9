@@ -3,10 +3,10 @@ package Map;
 public class MyHashMapTest {
 
     public static void main(String[] args) {
-        MyHashMap myMap = new MyHashMap();
+        MyMap <Integer, Character> myMap = new MyHashMap<>();
 
-        char v = 'A';
-        for (int k = 0; k < 10; k++) {
+        Character v = 'A';
+        for (Integer k = 0; k < 10; k++) {
             myMap.put(k, v);
             v++;
         }

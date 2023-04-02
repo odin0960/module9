@@ -1,17 +1,16 @@
-package Collection;
+package Collections;
 
 import java.util.StringJoiner;
 
-public class MyQueue implements OurQueue {
+public class MyQueue<E> implements OurQueue<E> {
 
 // FIFO
 //Можно делать либо с помощью Node либо с помощью массива.
-// Queue
 
     DoublyNode head = null;
     DoublyNode tail = null;
 
-    public void add(Object value) {
+    public void add(E value) {
         if (tail == null) {
             var node = new DoublyNode(value, null, null);
             tail = node;
@@ -42,13 +41,13 @@ public class MyQueue implements OurQueue {
         return size;
     }
 
-    public Object peek() {   //возвращает первый элемент в очереди (FIFO)
+    public E peek() {   //возвращает первый элемент в очереди (FIFO)
         if (tail == null)
             return null;
-        return head.value;
+        return (E) head.value;
     }
 
-    Object poll() {  //возвращает первый элемент в очереди и удаляет его из коллекции   */
+    E poll() {  //возвращает первый элемент в очереди и удаляет его из коллекции   */
         if (tail == null)
             return null;
 
@@ -61,7 +60,7 @@ public class MyQueue implements OurQueue {
             head = head.next;
             head.previous = null;
         }
-        return result;
+        return (E) result;
     }
 
     public String toString () {

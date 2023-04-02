@@ -1,10 +1,10 @@
 package Map;
 
-interface MyMap {
+interface MyMap<K,V> {
 
-    void put(Object key, Object value);
-    void remove(Object key);
+    void put(K key, V value);
+    void remove(K key);
     void clear();
     int size();
-    Object get(Object key);
+    V get(K key);
 }

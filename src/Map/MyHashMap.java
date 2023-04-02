@@ -1,12 +1,9 @@
 package Map;
 
-import java.util.StringJoiner;
-
-public class MyHashMap implements MyMap{
+public class MyHashMap<K, V> implements MyMap{
 
     /* Нужно делать с помощью односвязной Node.
 Не может хранить две ноды с одинаковых ключами одновременно.  */
-//HashMap
 
     MapNode head = null;
 
@@ -22,7 +19,7 @@ public class MyHashMap implements MyMap{
         head = new MapNode(key, value, head);
     }
 
-    public void remove(Object key) {// удаляет пару по ключу
+    public void remove(Object key) {  // удаляет пару по ключу
         System.out.println("Удаляем пару по ключу " + key);
         if (head.key.equals(key))
             head = head.next;
@@ -52,11 +49,11 @@ public class MyHashMap implements MyMap{
         return size;
     }
 
-    public Object get(Object key) {   // возвращает значение(Object value) по ключу
+    public V get(Object key) {   // возвращает значение(Object value) по ключу
                 var current = head;
         while (current != null) {
             if (current.key.equals(key)) {
-                return current.value;
+                return (V) current.value;
             }
             current = current.next;
         }

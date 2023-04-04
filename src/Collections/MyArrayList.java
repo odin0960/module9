@@ -28,12 +28,10 @@ public class MyArrayList<E> implements OurList<E> {
     }
 
     public int size() {
-
         return index;
     }
 
     public E get(int i) {
-
         return (E) data[i];
     }
 
